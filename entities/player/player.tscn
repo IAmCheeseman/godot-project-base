@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://725eck7yiftm"]
+[gd_scene load_steps=7 format=3 uid="uid://725eck7yiftm"]
 
 [ext_resource type="PackedScene" uid="uid://ckpyywatmqmne" path="res://entities/base-entity/entity.tscn" id="1_bxny5"]
 [ext_resource type="Script" path="res://entities/player/player.gd" id="2_wpprg"]
 [ext_resource type="Material" uid="uid://bg5sxbun4l510" path="res://effects/flashing/flashing.tres" id="3_0ny0u"]
 [ext_resource type="Texture2D" uid="uid://u6h4waan7yip" path="res://icon.png" id="3_8f0iy"]
 [ext_resource type="Script" path="res://tools/camera/camera.gd" id="4_nq24i"]
-[ext_resource type="Script" path="res://effects/flashing/flashing.gd" id="5_onmqr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_is1du"]
 radius = 8.0
@@ -29,7 +28,3 @@ collision_layer = 2
 
 [node name="CollisionShape" parent="Collisions/Hurtbox" index="0"]
 shape = SubResource("CircleShape2D_is1du")
-
-[node name="FlashingEffect" type="Node" parent="." index="5"]
-script = ExtResource("5_onmqr")
-sprite_path = NodePath("../Sprite")

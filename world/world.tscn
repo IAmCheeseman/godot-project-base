@@ -1,24 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://by1i7b7wvohrx"]
+[gd_scene load_steps=4 format=3 uid="uid://by1i7b7wvohrx"]
 
 [ext_resource type="Texture2D" uid="uid://068u1ssw6c68" path="res://icon.svg" id="1_1e5j1"]
 [ext_resource type="PackedScene" uid="uid://725eck7yiftm" path="res://entities/player/player.tscn" id="1_mk7hy"]
-[ext_resource type="FontFile" uid="uid://x775yh0ylsfr" path="res://ui/assets/NokiaCellphone.ttf" id="1_rvjpr"]
 [ext_resource type="Texture2D" uid="uid://u6h4waan7yip" path="res://icon.png" id="2_ssrvr"]
 
 [node name="World" type="Node2D"]
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Label" type="Label" parent="CanvasLayer"]
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 26.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0, 0, 0, 0.211765)
-theme_override_fonts/font = ExtResource("1_rvjpr")
-theme_override_font_sizes/font_size = 8
-text = "This is WIP"
-horizontal_alignment = 1
 
 [node name="Player" parent="." instance=ExtResource("1_mk7hy")]
 position = Vector2(160, 90)
