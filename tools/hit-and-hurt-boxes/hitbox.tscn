@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx4l162npnd6g"]
+
+[ext_resource type="Script" path="res://tools/hit-and-hurt-boxes/hitbox.gd" id="1_o5v8l"]
+
+[node name="Hitbox" type="Area2D" groups=["hitbox"]]
+collision_layer = 0
+monitorable = false
+script = ExtResource("1_o5v8l")
+
+[connection signal="area_entered" from="." to="." method="_on_hitbox_area_entered"]

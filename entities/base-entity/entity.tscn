@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckpyywatmqmne"]
+
+[ext_resource type="Script" path="res://entities/base-entity/entity.gd" id="1_wyxbp"]
+[ext_resource type="PackedScene" uid="uid://js1bpqxxd18t" path="res://tools/hit-and-hurt-boxes/hurtbox.tscn" id="2_v3osu"]
+[ext_resource type="Script" path="res://tools/damage-manager/damage_manager.gd" id="3_fpybl"]
+
+[node name="Entity" type="CharacterBody2D"]
+script = ExtResource("1_wyxbp")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+
+[node name="CollisionShape" type="CollisionShape2D" parent="."]
+
+[node name="Collisions" type="Node2D" parent="."]
+
+[node name="Hurtbox" parent="Collisions" instance=ExtResource("2_v3osu")]
+
+[node name="CollisionShape" type="CollisionShape2D" parent="Collisions/Hurtbox"]
+
+[node name="DamageManager" type="Node" parent="."]
+script = ExtResource("3_fpybl")
+hurtbox_path = NodePath("../Collisions/Hurtbox")

@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bg5sxbun4l510"]
+
+[ext_resource type="Shader" path="res://entities/player/player.gdshader" id="1_svm48"]
+
+[resource]
+shader = ExtResource("1_svm48")
+color = Color(0, 0, 0, 1)
+on = 0.0
