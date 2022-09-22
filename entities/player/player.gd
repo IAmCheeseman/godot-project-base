@@ -1,7 +1,6 @@
 extends Entity
 
 
-
 func _default_process(delta: float) -> void:
 	var input_dir = Input.get_vector("left", "right", "up", "down")
 	input_dir = input_dir.normalized()
