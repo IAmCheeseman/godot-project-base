@@ -1,5 +1,5 @@
 extends Node2D
-class_name Astar1Pathfinding
+class_name AstarPathfinding
 
 var astar := AStar2D.new()
 

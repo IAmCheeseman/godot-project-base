@@ -10,7 +10,7 @@ config_version=5
 
 _global_script_classes=[{
 "base": "Node2D",
-"class": &"Astar1Pathfinding",
+"class": &"AstarPathfinding",
 "language": &"GDScript",
 "path": "res://tools/pathfinding/astar_pathfinding.gd"
 }, {
@@ -70,7 +70,7 @@ _global_script_classes=[{
 "path": "res://tools/state-machine/state_machine.gd"
 }]
 _global_script_class_icons={
-"Astar1Pathfinding": "",
+"AstarPathfinding": "",
 "CustomCamera": "",
 "DamageManager": "",
 "Entity": "",
@@ -96,6 +96,7 @@ config/icon="res://icon.svg"
 
 GameManager="*res://tools/game-managing/game_manager.gd"
 Settings="*res://tools/game-managing/settings.gd"
+Pathfinding="*res://tools/pathfinding/astar_pathfinding.gd"
 
 [display]
 
