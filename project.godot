@@ -14,6 +14,11 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://tools/pathfinding/astar_pathfinding.gd"
 }, {
+"base": "Node",
+"class": &"AwaitTimer",
+"language": &"GDScript",
+"path": "res://tools/timer/await_timer.gd"
+}, {
 "base": "Camera2D",
 "class": &"CustomCamera",
 "language": &"GDScript",
@@ -33,11 +38,6 @@ _global_script_classes=[{
 "class": &"FlashingEffect",
 "language": &"GDScript",
 "path": "res://effects/flashing/flashing.gd"
-}, {
-"base": "Node",
-"class": &"FrameTimer",
-"language": &"GDScript",
-"path": "res://tools/timer/await_timer.gd"
 }, {
 "base": "RefCounted",
 "class": &"Globals",
@@ -81,11 +81,11 @@ _global_script_classes=[{
 }]
 _global_script_class_icons={
 "AstarPathfinding": "",
+"AwaitTimer": "",
 "CustomCamera": "",
 "DamageManager": "",
 "Entity": "",
 "FlashingEffect": "",
-"FrameTimer": "",
 "Globals": "",
 "LoadingZone": "",
 "ShadowGenerator": "",
