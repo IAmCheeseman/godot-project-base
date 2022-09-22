@@ -19,7 +19,6 @@ texture = ExtResource("3_8f0iy")
 
 [node name="Camera" type="Camera2D" parent="." index="2"]
 current = true
-smoothing_enabled = true
 smoothing_speed = 20.0
 script = ExtResource("4_nq24i")
 

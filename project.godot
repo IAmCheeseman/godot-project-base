@@ -97,6 +97,7 @@ config/icon="res://icon.svg"
 GameManager="*res://tools/game-managing/game_manager.gd"
 Settings="*res://tools/game-managing/settings.gd"
 Pathfinding="*res://tools/pathfinding/astar_pathfinding.gd"
+Cursor="*res://ui/cursor/cursor.tscn"
 
 [display]
 

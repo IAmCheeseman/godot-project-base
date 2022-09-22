@@ -8,9 +8,13 @@ A base for Godot projects.
 - `State` class
 - `DamageManager` class
 - `AwaitTimer` class
+- `Globals` class
+- `Gamemanager` singleton
+- `Settings` singleton
+- `Pathinding` singleton
+- `Cursor` singleton
 - Hurt and Hitboxes
 - Loading zone
-- A*
 - Player detector
 - Screenshake
 - Flash effect
