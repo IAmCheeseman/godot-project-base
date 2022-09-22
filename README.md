@@ -9,20 +9,20 @@ A base for Godot projects.
 - `DamageManager` class
 - `AwaitTimer` class
 - `Globals` class
+- `ShadowGenerator` class
 - `SoundManager` class
 - `Gamemanager` singleton
 - `Settings` singleton
 - `Pathinding` singleton
 - `Cursor` singleton
+- `LoadingZone` scene
+- `PlayerDetector` scene
+- `Entity` scene
+- A topdown player controller
 - Hurt and Hitboxes
-- Loading zone
-- Player detector
 - Screenshake
 - Flash effect
 - Camera mouse weight
-- Shadow generator
-- Base `Entity` scene
-- A topdown player controller
 
 ## Intro
 ![image](https://user-images.githubusercontent.com/64710123/191853201-c5bb9fb8-1b75-4e74-815d-b1a4c7bfc8e1.png)
