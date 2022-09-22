@@ -59,6 +59,11 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://tools/shadow-generator/tile_shadows.gd"
 }, {
+"base": "Node2D",
+"class": &"SoundManager",
+"language": &"GDScript",
+"path": "res://tools/sound-manager/sound_manager.gd"
+}, {
 "base": "RefCounted",
 "class": &"State",
 "language": &"GDScript",
@@ -68,6 +73,11 @@ _global_script_classes=[{
 "class": &"StateMachine",
 "language": &"GDScript",
 "path": "res://tools/state-machine/state_machine.gd"
+}, {
+"base": "RefCounted",
+"class": &"Utils",
+"language": &"GDScript",
+"path": "res://tools/game-managing/utils.gd"
 }]
 _global_script_class_icons={
 "AstarPathfinding": "",
@@ -80,8 +90,10 @@ _global_script_class_icons={
 "LoadingZone": "",
 "ShadowGenerator": "",
 "ShadowedTileMap": "",
+"SoundManager": "",
 "State": "",
-"StateMachine": ""
+"StateMachine": "",
+"Utils": ""
 }
 
 [application]

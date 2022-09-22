@@ -9,6 +9,7 @@ A base for Godot projects.
 - `DamageManager` class
 - `AwaitTimer` class
 - `Globals` class
+- `SoundManager` class
 - `Gamemanager` singleton
 - `Settings` singleton
 - `Pathinding` singleton
@@ -25,3 +26,10 @@ A base for Godot projects.
 
 ## Intro
 ![image](https://user-images.githubusercontent.com/64710123/191853201-c5bb9fb8-1b75-4e74-815d-b1a4c7bfc8e1.png)
+
+## Future plans
+
+- Main menu
+- Settings menu
+- Pause menu
+- Music system
