@@ -1,4 +1,4 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://b68sa26ag05sq"]
 
 [ext_resource type="Shader" path="res://effects/flashing/flashing.gdshader" id="1_svm48"]
 

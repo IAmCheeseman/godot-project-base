@@ -9,6 +9,6 @@ func _default_process(delta: float) -> void:
 	velocity = velocity.move_toward(input_dir * speed, accel_delta * delta)
 	
 	if Input.is_action_just_pressed("ui_accept"):
-		Utils.create_new_dialog("You pressed space!")
+		Utils.create_new_dialog("You pressed space! [shake] `[img]ui/assets/happy.png[/img] Now die.[/shake]")
 	
 	move_and_slide()
