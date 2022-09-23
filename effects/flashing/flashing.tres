@@ -1,6 +1,6 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bg5sxbun4l510"]
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
 
-[ext_resource type="Shader" path="res://entities/player/player.gdshader" id="1_svm48"]
+[ext_resource type="Shader" path="res://effects/flashing/flashing.gdshader" id="1_svm48"]
 
 [resource]
 shader = ExtResource("1_svm48")
