@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dy36bos135k6b"]
+
+[ext_resource type="Shader" path="res://effects/vignette/vignette.gdshader" id="1_wu6cr"]
+
+[resource]
+shader = ExtResource("1_wu6cr")
+amount = 0.295

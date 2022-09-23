@@ -16,7 +16,6 @@ grow_vertical = 2
 theme = ExtResource("1_xq6jb")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Dialog"]
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -27,7 +26,6 @@ alignment = 2
 
 [node name="Margin" type="MarginContainer" parent="Dialog/VBoxContainer"]
 custom_minimum_size = Vector2(0, 32)
-layout_mode = 2
 offset_top = 148.0
 offset_right = 344.0
 offset_bottom = 180.0
@@ -39,7 +37,6 @@ theme_override_constants/margin_bottom = 10
 [node name="DialogText" type="RichTextLabel" parent="Dialog/VBoxContainer/Margin"]
 unique_name_in_owner = true
 clip_contents = false
-layout_mode = 2
 offset_left = 32.0
 offset_top = 10.0
 offset_right = 312.0
