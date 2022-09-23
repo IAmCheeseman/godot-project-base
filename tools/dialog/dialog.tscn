@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfwkcxbqvti67"]
+
+[ext_resource type="Theme" uid="uid://d0wjwycflscrl" path="res://ui/assets/theme.tres" id="1_xq6jb"]
+[ext_resource type="Script" path="res://tools/dialog/dialog.gd" id="2_it7n6"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("2_it7n6")
+
+[node name="Dialog" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_xq6jb")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Dialog"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 2
+
+[node name="Margin" type="MarginContainer" parent="Dialog/VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+offset_top = 148.0
+offset_right = 344.0
+offset_bottom = 180.0
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 10
+
+[node name="DialogText" type="RichTextLabel" parent="Dialog/VBoxContainer/Margin"]
+unique_name_in_owner = true
+clip_contents = false
+layout_mode = 2
+offset_left = 32.0
+offset_top = 10.0
+offset_right = 312.0
+offset_bottom = 22.0
+bbcode_enabled = true
+text = "[center][wave amp=1]Hello![/wave]"
+scroll_active = false
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.05
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="advance_text"]

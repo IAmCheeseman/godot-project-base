@@ -8,4 +8,7 @@ func _default_process(delta: float) -> void:
 	var accel_delta = accel if velocity.dot(input_dir) > 0 else frict
 	velocity = velocity.move_toward(input_dir * speed, accel_delta * delta)
 	
+	if Input.is_action_just_pressed("ui_accept"):
+		Utils.create_new_dialog("You pressed space!")
+	
 	move_and_slide()
