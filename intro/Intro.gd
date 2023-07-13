@@ -6,7 +6,7 @@ extends Control
 
 
 func load_game() -> void:
-	get_tree().change_scene(load)
+	get_tree().change_scene_to_file(load)
 
 
 func _unhandled_input(event: InputEvent) -> void:

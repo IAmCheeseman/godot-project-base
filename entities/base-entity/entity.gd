@@ -9,10 +9,8 @@ class_name Entity
 @export var accel := 800.0
 @export var frict := 900.0
 
-var _s_default := State.new(
-	"default",
-	Callable(self, "_default_process")
-)
+var _s_default := State.new("default") \
+	.callback(State.CallbackType.PROC, _default_process)
 var _state_machine := StateMachine.new(_s_default)
 
 

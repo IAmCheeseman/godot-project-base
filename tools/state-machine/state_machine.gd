@@ -21,21 +21,21 @@ func _init(default_state: State) -> void:
 ## Changes the current state to [code]to[/code].
 func change_state(to: State) -> void:
 	if is_instance_valid(_current_state):
-		if _current_state.end_func:
-			_current_state.end_func.call()
+		if _current_state.callbacks.has(State.CallbackType.END):
+			_current_state.callbacks[State.CallbackType.END].call()
 	
 	_current_state = to
 	
 	if _current_state == null:
 		return
-	if _current_state.ready_func:
-		_current_state.ready_func.call()
+	if _current_state.callbacks.has(State.CallbackType.START):
+		_current_state.callbacks[State.CallbackType.START].call()
 
 ## Processes the current state.
 func process(delta: float) -> void:
 	if _current_state == null:
 		return
-	_current_state.process_func.call(delta)
+	_current_state.callbacks[State.CallbackType.PROC].call(delta)
 
 ## Returns [code]current_state[/code]'s name.
 func get_state_name() -> String:

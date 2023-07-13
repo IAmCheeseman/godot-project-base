@@ -3,8 +3,8 @@ class_name DamageManager
 
 @onready var parent = get_parent()
 
-@export_node_path(Area2D) var hurtbox_path
-@onready var hurtbox := get_node(hurtbox_path)
+@export_node_path("Area2D") var hurtbox_path: NodePath
+@onready var hurtbox: Area2D = get_node(hurtbox_path)
 @export var max_health := 100.0
 @export var kb_multiplier := 150.0
 @export var is_enemy := true

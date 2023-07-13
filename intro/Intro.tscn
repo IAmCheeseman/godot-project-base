@@ -129,7 +129,7 @@ theme = ExtResource("1_yv2re")
 script = ExtResource("2_sptno")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-anchors_preset = 15
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -137,32 +137,26 @@ grow_vertical = 2
 color = Color(0.0745098, 0.0745098, 0.0941176, 1)
 
 [node name="Center" type="CenterContainer" parent="."]
-anchors_preset = 15
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Center"]
-offset_left = 137.0
-offset_right = 183.0
-offset_bottom = 268.0
+layout_mode = 2
 
 [node name="Logo" type="HBoxContainer" parent="Center/VBoxContainer"]
-offset_right = 46.0
-offset_bottom = 260.0
+layout_mode = 2
 
 [node name="Cheese" type="TextureRect" parent="Center/VBoxContainer/Logo"]
 custom_minimum_size = Vector2(0, 260)
-offset_right = 42.0
-offset_bottom = 260.0
+layout_mode = 2
 texture = ExtResource("3_m1wo6")
 stretch_mode = 2
 
 [node name="Label" type="Label" parent="Center/VBoxContainer/Logo"]
-offset_left = 46.0
-offset_right = 46.0
-offset_bottom = 260.0
+layout_mode = 2
 size_flags_vertical = 1
 theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("2_rx6a2")
@@ -173,9 +167,7 @@ visible_characters = 0
 visible_ratio = 0.0
 
 [node name="HSeparator" type="HSeparator" parent="Center/VBoxContainer"]
-offset_top = 264.0
-offset_right = 46.0
-offset_bottom = 268.0
+layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxFlat_fhnq5")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -185,7 +177,7 @@ libraries = {
 }
 
 [node name="Margin" type="MarginContainer" parent="."]
-anchors_preset = 9
+layout_mode = 0
 anchor_bottom = 1.0
 offset_right = 115.0
 grow_vertical = 2
@@ -193,29 +185,21 @@ theme_override_constants/margin_left = 5
 theme_override_constants/margin_bottom = 5
 
 [node name="VBox" type="VBoxContainer" parent="Margin"]
-offset_left = 5.0
-offset_right = 122.0
-offset_bottom = 175.0
-grow_vertical = 2
+layout_mode = 2
 alignment = 2
 
 [node name="HBox" type="HBoxContainer" parent="Margin/VBox"]
-offset_top = 159.0
-offset_right = 117.0
-offset_bottom = 175.0
+layout_mode = 2
 
 [node name="GodotLogo" type="TextureRect" parent="Margin/VBox/HBox"]
 custom_minimum_size = Vector2(18, 16)
-offset_right = 18.0
-offset_bottom = 16.0
+layout_mode = 2
 texture = ExtResource("5_8bdob")
-ignore_texture_size = true
+expand_mode = 1
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Margin/VBox/HBox"]
-offset_left = 22.0
-offset_right = 117.0
-offset_bottom = 16.0
+layout_mode = 2
 size_flags_vertical = 1
 text = "Made With Godot <3"
 vertical_alignment = 2
